@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".activities.MainActivity"
     tools:layout_editor_absoluteY="81dp">
 
     <TextView
@@ -12,28 +12,16 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="128dp"
+        android:layout_marginBottom="136dp"
         android:text="Bem Vindo"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/news"
+        app:layout_constraintBottom_toTopOf="@+id/btNews"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/news"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginBottom="34dp"
-        android:text="Notícias"
-        app:layout_constraintBottom_toTopOf="@+id/enterprises"
-        app:layout_constraintStart_toStartOf="@+id/enterprises"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/enterprises"
+        android:id="@+id/btEnterprises"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="195dp"
@@ -41,6 +29,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/news" />
+        app:layout_constraintTop_toBottomOf="@+id/btNews" />
+
+    <Button
+        android:id="@+id/btNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginBottom="27dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/btEnterprises"
+        app:layout_constraintStart_toStartOf="@+id/btEnterprises"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </android.support.constraint.ConstraintLayout>
