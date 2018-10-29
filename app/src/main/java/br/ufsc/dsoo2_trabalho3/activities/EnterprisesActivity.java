@@ -11,10 +11,6 @@ import br.ufsc.dsoo2_trabalho3.adapters.EnterprisesAdapter;
 public class EnterprisesActivity extends AppCompatActivity {
 
     private String[] dataset = {"item 1","item 2","item 3","item 4","item 5","item 6"};
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
