@@ -10,7 +10,7 @@ import br.ufsc.dsoo2_trabalho3.adapters.EnterprisesAdapter;
 
 public class EnterprisesActivity extends AppCompatActivity {
 
-    private String[] dataset = {"item 1","item 2","item 3","item 4","item 5","item 6"};
+    private String[] dataset = {"item 1","item 2","item 3","item 4","item 5","item 6", "item 7"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,5 @@ public class EnterprisesActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.eRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new EnterprisesAdapter(this, dataset));
-
     }
 }
