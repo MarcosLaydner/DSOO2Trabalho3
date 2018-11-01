@@ -20,5 +20,7 @@ public class EnterprisesActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.eRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new EnterprisesAdapter(this, dataset));
+
+
     }
 }

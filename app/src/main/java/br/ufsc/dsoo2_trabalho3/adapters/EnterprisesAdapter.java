@@ -42,6 +42,7 @@ public class EnterprisesAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
                 context.startActivity(startIntent);
             }
         });
+
     }
 
     @Override
@@ -52,10 +53,13 @@ public class EnterprisesAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
     public class Item extends RecyclerView.ViewHolder {
         TextView textView;
         Button btMap;
+        Button btVideo;
         public Item(View itemView){
             super(itemView);
             textView = itemView.findViewById(R.id.eItem);
             btMap = itemView.findViewById(R.id.btMap);
+            btVideo = itemView.findViewById(R.id.btVideo);
+
         }
     }
 }
