@@ -4,9 +4,9 @@
 ---
 - **(Lucas)** Uma área de notícias para que a construtora possa apresentar seus lançamentos e outras informações relevantes;
 
-- Uma lista com os empreendimentos da construtora (veja aqui como criar listas);
+- **(Feito)** Uma lista com os empreendimentos da construtora (veja aqui como criar listas);
 
-- Um mapa indicando o local de cada empreendimento (veja aqui como exibir um mapa no Google Maps);
+- **(Feito)** Um mapa indicando o local de cada empreendimento (veja aqui como exibir um mapa no Google Maps);
 
 - Uma tela com detalhes sobre cada empreendimento, com informações como endereço, características dos imóveis (número de quartos, área, etc.), data prevista de entrega, valor do imóvel, prazo de financiamento, plantas dos imóveis, etc.;
 
