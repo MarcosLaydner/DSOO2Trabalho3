@@ -12,6 +12,6 @@
 
 - **(Lucas)** Vídeos dos empreendimentos (veja e aqui como fazer para iniciar a exibição de um vídeo no YouTube a partir do seu aplicativo);
 
-- **(Not Importante)** Outras informações que você considere interessante.
+- **(Not Important)** Outras informações que você considere interessante.
 
 - Os dados utilizados pela aplicação serão armazenados em arquivos contidos na pasta 'res' do projeto, que serão distribuídos com o aplicativo;
