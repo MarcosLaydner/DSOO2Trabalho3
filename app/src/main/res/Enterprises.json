@@ -1,0 +1,28 @@
+{
+  "enterpriseList":
+    [
+      {
+        "name": "Edifício Ukufutilus",
+        "latitude": -27.5713,
+        "longitude": -48.6284,
+        "endereço": "Rua josé puto 76",
+        "numQuartos": 4,
+        "dataEntrega": "22/4/22",
+        "valor": 12345,
+        "prazoFinanciamento": 24
+      }
+      ,
+      {
+        "name": "Residencial Henrico Custelo",
+        "videoUrl": "",
+        "latitude": -27.2109,
+        "longitude": -49.6312,
+        "endereço": "Rua Dom Bosco 883",
+        "numQuartos": 2,
+        "dataEntrega": "22/4/19",
+        "valor": 1234,
+        "prazoFinanciamento": 24
+      }
+
+    ]
+}
