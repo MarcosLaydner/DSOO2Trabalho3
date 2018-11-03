@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/eItem"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="57dp"
         android:textAppearance="@android:style/TextAppearance.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btVideo"
@@ -19,7 +19,7 @@
     <Button
         android:id="@+id/btMap"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="63dp"
         android:text="Mapa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btVideo"
@@ -28,7 +28,7 @@
     <Button
         android:id="@+id/btVideo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="63dp"
         android:text="video"
         app:layout_constraintBaseline_toBaselineOf="@+id/btMap"
         app:layout_constraintEnd_toStartOf="@+id/btMap"
