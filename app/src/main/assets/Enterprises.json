@@ -5,21 +5,34 @@
         "longitude": -48.6284,
         "address": "Rua jose puto 76",
         "roomQnt": 4,
-        "finishingDate": "22/4/22",
+        "finishingDate": "22/04/22",
         "price": 12345,
-        "prazoFinanciamento": 24
+        "prazoFinanciamento": 24,
+        "videoUrl": ""
       }
       ,
       {
         "name": "Residencial Henrico Custelo",
-        "videoUrl": "",
         "latitude": -27.2109,
         "longitude": -49.6312,
         "address": "Rua Dom Bosco 883",
         "roomQnt": 2,
-        "finishingDate": "22/4/19",
+        "finishingDate": "22/06/19",
         "price": 1234,
-        "prazoFinanciamento": 24
+        "prazoFinanciamento": 24,
+        "videoUrl": ""
+      }
+    ,
+      {
+        "name": "Edificio Grikuth",
+        "latitude": -23.500678,
+        "longitude": -46.444549,
+        "address": "Rua Washington Lopes 116",
+        "roomQnt": 2,
+        "finishingDate": "02/05/18",
+        "price": 1234,
+        "prazoFinanciamento": 24,
+        "videoUrl": ""
       }
 
     ]

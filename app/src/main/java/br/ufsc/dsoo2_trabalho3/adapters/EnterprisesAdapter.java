@@ -39,7 +39,7 @@ public class EnterprisesAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, final int position) {
         try {
 
             ((Item) holder).textView.setText(dataset.getJSONObject(position).getString("name") );
@@ -48,6 +48,12 @@ public class EnterprisesAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
                 @Override
                 public void onClick(View v) {
                     Intent startIntent = new Intent(context, MapsActivity.class);
+                    try {
+                        startIntent.putExtra("latitude", Float.parseFloat(dataset.getJSONObject(position).get("latitude").toString()));
+                        startIntent.putExtra("longitude", Float.parseFloat(dataset.getJSONObject(position).get("longitude").toString()));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     context.startActivity(startIntent);
                 }
             });
