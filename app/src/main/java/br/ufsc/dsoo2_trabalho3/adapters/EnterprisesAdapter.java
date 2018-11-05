@@ -1,5 +1,6 @@
 package br.ufsc.dsoo2_trabalho3.adapters;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.google.android.youtube.player.YouTubeStandalonePlayer;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -58,7 +61,19 @@ public class EnterprisesAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
                 }
             });
 
-            //TODO -Varella- video button intent Starter
+            ((Item) holder).btVideo.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    try {
+                        Intent intent = YouTubeStandalonePlayer.createVideoIntent((Activity)context, "AIzaSyAXIuxZLdLGKAgYPL6zZzPa_JWrWNm97h8", dataset.getJSONObject(position).get("videoUrl").toString(), 0, true, false);
+                        context.startActivity(intent);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+            });
 
             ((Item) holder).setItemClickListener(new ItemClickListener() {
                 @Override
@@ -119,3 +134,5 @@ public class EnterprisesAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
         }
     }
 }
+
+//YouTubeStandalonePlayer.createVideoIntent(context, 'AIzaSyAXIuxZLdLGKAgYPL6zZzPa_JWrWNm97h8', dataset.getJSONObject(position).get("videoUrl"));

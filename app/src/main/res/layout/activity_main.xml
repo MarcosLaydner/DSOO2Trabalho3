@@ -38,7 +38,7 @@
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
         android:layout_marginBottom="27dp"
-        android:text="Button"
+        android:text="Notícias"
         app:layout_constraintBottom_toTopOf="@+id/btEnterprises"
         app:layout_constraintStart_toStartOf="@+id/btEnterprises"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
