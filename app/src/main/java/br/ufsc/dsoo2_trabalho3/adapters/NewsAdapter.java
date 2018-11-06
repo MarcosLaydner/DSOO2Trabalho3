@@ -44,8 +44,19 @@ public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         try {
 
             ((Item) holder).nameTv.setText(dataset.getJSONObject(position).getString("name") );
-            ((Item) holder).textTv.setText(dataset.getJSONObject(position).getString("text") );
 
+            ((Item) holder).setItemClickListener(new ItemClickListener() {
+                @Override
+                public void onClick(View view, int position) throws JSONException {
+                    JSONObject obj = dataset.getJSONObject(position);
+                    new AlertDialog.Builder(context)
+                            .setTitle("Notícia")
+                            .setMessage("" + obj.getString("name")
+                                    + "\n\n "+ obj.getString("text") + "")
+                            .setPositiveButton("OK", null)
+                            .create().show();
+                }
+            });
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -68,7 +79,6 @@ public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         public Item(View itemView){
             super(itemView);
             nameTv = itemView.findViewById(R.id.nameTv);
-            textTv = itemView.findViewById(R.id.textTv);
             itemView.setOnClickListener(this);
 
         }
@@ -79,10 +89,10 @@ public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         @Override
         public void onClick(View v) {
-//            try {
-//                itemClickListener.onClick(v,getAdapterPosition());
-//            } catch (JSONException e) {
-//            }
+            try {
+                itemClickListener.onClick(v,getAdapterPosition());
+            } catch (JSONException e) {
+            }
         }
     }
 
