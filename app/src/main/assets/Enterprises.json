@@ -5,7 +5,7 @@
         "longitude": -48.6284,
         "address": "Rua jose puto 76",
         "roomQnt": 4,
-        "finishingDate": "22/04/22",
+        "finishingDate": "22/04/2022",
         "price": 12345,
         "prazoFinanciamento": 24,
         "videoUrl": "vRGqYL0XGOA"
@@ -17,7 +17,7 @@
         "longitude": -49.6312,
         "address": "Rua Dom Bosco 883",
         "roomQnt": 2,
-        "finishingDate": "22/06/19",
+        "finishingDate": "22/06/2019",
         "price": 1234,
         "prazoFinanciamento": 24,
         "videoUrl": "bJ4-fIw6mZg"
@@ -29,10 +29,22 @@
         "longitude": -46.444549,
         "address": "Rua Washington Lopes 116",
         "roomQnt": 2,
-        "finishingDate": "02/05/18",
+        "finishingDate": "02/05/2018",
         "price": 1234,
         "prazoFinanciamento": 24,
         "videoUrl": "aKn0HddzuWM"
+      }
+    ,
+      {
+        "name": "Monte Evereste",
+        "latitude": 27.986065,
+        "longitude": 86.922623,
+        "address": "Monte Evereste, Nepal",
+        "roomQnt": 324,
+        "finishingDate": "~60.000 anos atrás",
+        "price": 3569870900,
+        "prazoFinanciamento": 36,
+        "videoUrl": "PlblwP2oa-0"
       }
 
     ]
